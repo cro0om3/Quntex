@@ -4,7 +4,12 @@ import streamlit as st
 def apply_theme():
     """Apply global dark, glassmorphic theme for Lark Executive Suite."""
     accent_choice = st.session_state.get("accent_color", "Blue")
-    primary = "#1B76FF" if accent_choice == "Blue" else "#E0B455"
+    if accent_choice == "Gold":
+        primary = "#E0B455"
+        accent_gold = "#E0B455"
+    else:
+        primary = "#1B76FF"
+        accent_gold = "#E0B455"
     st.set_page_config(
         page_title="Lark Executive Suite",
         page_icon="💠",
@@ -18,7 +23,7 @@ def apply_theme():
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
         :root {{
             --lark-blue: {primary};
-            --lark-gold: #E0B455;
+            --lark-gold: {accent_gold};
             --card: rgba(255, 255, 255, 0.05);
             --card-strong: rgba(255, 255, 255, 0.08);
             --stroke: rgba(255, 255, 255, 0.12);

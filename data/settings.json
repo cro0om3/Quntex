@@ -1,0 +1,34 @@
+{
+  "name": "ffgrgfCafe",
+  "tax": 5.0,
+  "service_charge": 1.0,
+  "logo": null,
+  "appearance": {
+    "accent": "Blue",
+    "brightness": 70,
+    "blur": 14,
+    "sidebar_opacity": 80,
+    "radius": 16
+  },
+  "phone": "0502992932",
+  "address": "",
+  "wifi_name": "",
+  "wifi_pass": "",
+  "footer": "",
+  "vat": 5.0,
+  "service_enabled": true,
+  "receipt": {
+    "show_address": true,
+    "show_wifi": true,
+    "show_qr": true,
+    "currency": "AED",
+    "format": "prefix"
+  },
+  "pos": {
+    "auto_open_cart": true,
+    "auto_close_modal": true,
+    "service_default": "Dine-in",
+    "quick_actions": true,
+    "payment_default": "Card"
+  }
+}
