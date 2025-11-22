@@ -26,7 +26,7 @@ def render_sidebar():
         try:
             st.sidebar.image(str(logo_path), width=140)
         except Exception:
-            st.sidebar.markdown("<div style='color:#9fb0c7;'>Lark Cafe</div>", unsafe_allow_html=True)
+            st.sidebar.markdown("<div style='color:#9fb0c7;'>Larc Cafe</div>", unsafe_allow_html=True)
     st.sidebar.markdown('<div class="divider"></div>', unsafe_allow_html=True)
 
     st.session_state.setdefault("accent_color", "Blue")

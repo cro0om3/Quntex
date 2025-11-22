@@ -15,7 +15,7 @@ st.markdown(
     """
     <div class="glass glass-strong animate-pop" style="padding: 26px; margin-bottom: 18px;">
         <div class="pill">Executive Preview</div>
-        <h2 style="margin: 6px 0 4px;">Lark Cafe — Intelligent Control Room</h2>
+        <h2 style="margin: 6px 0 4px;">Larc Cafe — Intelligent Control Room</h2>
         <p style="color:#9fb0c7; margin-top: 0;">AI-first oversight, instant profit clarity, and a premium Apple-style experience.</p>
     </div>
     """,

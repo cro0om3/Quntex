@@ -104,7 +104,7 @@ st.markdown(
         <div style="position:relative; display:flex; justify-content:space-between; align-items:flex-start;">
             <div>
                 <div class="pill" style="background: rgba(224,180,85,0.18); color:#ffd78a; border-color: rgba(224,180,85,0.45);">Executive Reports • Powered by IntaAgent™</div>
-                <h2 style="margin: 6px 0 2px;">Lark Cafe — Financial Reporting Console</h2>
+                <h2 style="margin: 6px 0 2px;">Larc Cafe — Financial Reporting Console</h2>
                 <p style="color:#cbd7f0; margin:0;">Premium reporting — AED only, AI-guided insights, export-ready PDFs.</p>
             </div>
             <div style="text-align:right; color:#9fb0c7;">
@@ -281,7 +281,7 @@ today = datetime.now().strftime("%d %b %Y")
 st.markdown(
     f"""
     <div class="glass glass-strong animate-pop" style="padding:12px; max-width:420px; margin-top:10px;">
-        <div style="font-weight:700;">Lark Cafe — Executive Report</div>
+        <div style="font-weight:700;">Larc Cafe — Executive Report</div>
         <div style="color:#9fb0c7;">Date: {today}</div>
         <div style="color:#9fb0c7;">AED values only</div>
     </div>

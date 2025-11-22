@@ -9,7 +9,7 @@ render_sidebar()
 
 if "settings" not in st.session_state:
     st.session_state["settings"] = {
-        "name": "Lark Cafe",
+        "name": "Larc Cafe",
         "tax": 5.0,
         "service_charge": True,
         "logo": None,
@@ -76,7 +76,7 @@ with left:
     name_val = st.text_input(
         "Cafe Name",
         value=st.session_state["settings"]["name"],
-        placeholder="Lark Cafe • Central Branch",
+        placeholder="Larc Cafe • Central Branch",
         help="Shown on receipts, reports, and POS.",
         key="name_input",
     )
