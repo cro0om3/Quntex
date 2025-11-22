@@ -1,9 +1,28 @@
+
 import streamlit as st
+
+# Set mobile zoom to 47% (must be at the very top)
+st.markdown(
+    """
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=0.47, maximum-scale=1.0, user-scalable=yes'>
+    </head>
+    """,
+    unsafe_allow_html=True,
+)
 
 from utils.loader import load_json
 from utils.theme import apply_theme
 
 
+
+# Set mobile zoom to 47%
+st.markdown(
+    """
+    <meta name='viewport' content='width=device-width, initial-scale=0.47, maximum-scale=1.0, user-scalable=yes'>
+    """,
+    unsafe_allow_html=True,
+)
 apply_theme()
 
 if "auth" not in st.session_state:
