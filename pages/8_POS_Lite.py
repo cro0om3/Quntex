@@ -33,11 +33,45 @@ def get_products():
 
 
 apply_theme()
-render_sidebar()
+# Determine mode from query (?mode=menu for customer view, default pos for management)
+qp = st.query_params
+mode_val = qp.get("mode", "pos")
+mode = mode_val[0] if isinstance(mode_val, list) else mode_val
 
-if not st.session_state.get("auth"):
-    st.warning("Please login to access Qx Register.")
-    st.switch_page("pages/1_Login.py")
+# PIN for management unlock
+PIN_CODE = "2025"
+
+if mode == "pos":
+    if not st.session_state.get("auth"):
+        st.warning("Please login to access Qx Register.")
+        st.switch_page("pages/1_Login.py")
+    st.session_state.setdefault("pos_admin", False)
+    # Floating unlock button
+    unlock_col = st.empty()
+    with unlock_col:
+        if not st.session_state["pos_admin"]:
+            if st.button("🔒 Admin", help="Tap to enter PIN and show admin sidebar"):
+                st.session_state["pos_unlock"] = True
+        else:
+            st.markdown("🔓 Admin unlocked")
+    if st.session_state.get("pos_unlock"):
+        pin_try = st.text_input("Enter admin PIN", type="password", key="pos_admin_pin")
+        if st.button("Unlock", key="pos_unlock_btn"):
+            if pin_try == PIN_CODE:
+                st.session_state["pos_admin"] = True
+                st.session_state["pos_unlock"] = False
+                st.success("Admin unlocked.")
+            else:
+                st.error("Incorrect PIN.")
+    if st.session_state.get("pos_admin"):
+        render_sidebar()
+    else:
+        # hide sidebar until unlocked
+        st.markdown("<style>[data-testid='stSidebar']{display:none !important;}</style>", unsafe_allow_html=True)
+
+else:
+    # customer mode: hide sidebar, no admin gating
+    st.markdown("<style>[data-testid='stSidebar']{display:none !important;}</style>", unsafe_allow_html=True)
 
 products = get_products()
 st.session_state.setdefault("pos_active_cat", products[0]["category"] if products else "Featured")

@@ -8,6 +8,7 @@ NAV_ITEMS = [
     ("Inventory Brain", "pages/4_Inventory_Brain.py"),
     ("Products Cost", "pages/5_Products_Cost.py"),
     ("Executive Reports", "pages/6_Executive_Reports.py"),
+    ("AI Cashier Demo", "pages/10_AI_Cashier_Demo.py"),
     ("POS Lite", "pages/8_POS_Lite.py"),
     ("QR Menu", "pages/7_QR_Menu_Demo.py"),
     ("Settings", "pages/9_Settings.py"),
