@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Latte",
+    "cost": 4.2,
+    "price": 17
+  },
+  {
+    "name": "Spanish Latte",
+    "cost": 5.0,
+    "price": 22
+  },
+  {
+    "name": "Cold Brew",
+    "cost": 3.8,
+    "price": 19
+  }
+]

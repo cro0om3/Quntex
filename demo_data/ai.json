@@ -1,0 +1,50 @@
+{
+  "alerts": [
+    "Peak hour expected at 8 PM — prepare staff",
+    "Milk usage increased by 22%",
+    "Coffee Beans are under safe limit"
+  ],
+  "profit_drivers": [
+    {
+      "item": "Spanish Latte",
+      "margin": 0.72
+    },
+    {
+      "item": "Cold Brew",
+      "margin": 0.66
+    }
+  ],
+  "fast_movers": [
+    {
+      "item": "Spanish Latte",
+      "rate": "3x faster than morning"
+    }
+  ],
+  "slow_movers": [
+    {
+      "item": "Flat White",
+      "days_no_sale": 6
+    }
+  ],
+  "prediction": {
+    "next_busy_hour": "8 PM",
+    "expected_orders": 42,
+    "heatmap": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        3,
+        5,
+        8
+      ],
+      [
+        1,
+        2,
+        4
+      ]
+    ]
+  }
+}

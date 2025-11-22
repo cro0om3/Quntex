@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "name": "Coffee Beans",
+      "stock": 2,
+      "min": 5
+    },
+    {
+      "name": "Milk 2L",
+      "stock": 9,
+      "min": 10
+    },
+    {
+      "name": "Cups",
+      "stock": 700,
+      "min": 400
+    }
+  ],
+  "reorder_suggestions": [
+    "Order 3 bags of Coffee Beans",
+    "Order 5 packs of Milk"
+  ],
+  "waste_chart": [
+    {
+      "day": "Mon",
+      "value": 8
+    },
+    {
+      "day": "Tue",
+      "value": 14
+    },
+    {
+      "day": "Wed",
+      "value": 6
+    }
+  ]
+}

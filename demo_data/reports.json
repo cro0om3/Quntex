@@ -1,0 +1,44 @@
+{
+  "profit_summary": [
+    {
+      "metric": "Revenue",
+      "value": 3450
+    },
+    {
+      "metric": "Gross Profit",
+      "value": 1621
+    },
+    {
+      "metric": "Net Profit",
+      "value": 1185
+    }
+  ],
+  "waste_report": [
+    {
+      "item": "Milk",
+      "value": 6
+    },
+    {
+      "item": "Beans",
+      "value": 3
+    }
+  ],
+  "category_performance": [
+    {
+      "category": "Coffee",
+      "value": 48
+    },
+    {
+      "category": "Cold Drinks",
+      "value": 22
+    },
+    {
+      "category": "Food",
+      "value": 18
+    },
+    {
+      "category": "Specialty",
+      "value": 12
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "today_sales": 3450,
+  "orders_today": 112,
+  "avg_ticket": 30.8,
+  "profit_margin": 0.47,
+  "sales_by_hour": [
+    {
+      "hour": "8 AM",
+      "sales": 120
+    },
+    {
+      "hour": "9 AM",
+      "sales": 260
+    },
+    {
+      "hour": "10 AM",
+      "sales": 420
+    }
+  ],
+  "category_breakdown": {
+    "Coffee": 48,
+    "Cold Drinks": 22,
+    "Food": 18,
+    "Specialty": 12
+  },
+  "top_items": [
+    {
+      "name": "Spanish Latte",
+      "qty": 47,
+      "revenue": 1034
+    },
+    {
+      "name": "Latte",
+      "qty": 41,
+      "revenue": 738
+    }
+  ]
+}
