@@ -35,13 +35,13 @@ if not st.session_state.get("auth"):
     st.warning("Please login to access Settings.")
     st.switch_page("pages/1_Login.py")
 
-# Minimal top header (dark theme)
+# Minimal top header (matches Executive Dashboard style, no card)
 st.markdown(
     """
     <div style="padding: 8px 0 0 0;">
-        <h2 style="margin-bottom: 0; font-size: 2.1rem; font-weight: 700; color: #F3F6FF; font-family: 'Inter', 'Playfair Display', serif;">Settings</h2>
-        <div style="font-size: 1.08rem; color: #9fb0c7; margin-bottom: 2px;">Your café configuration center</div>
-        <div style="height:1px; background: rgba(255,255,255,0.18); margin-bottom: 8px; margin-top: 2px;"></div>
+        <h2 style="margin-bottom: 0; font-size: 2.1rem; font-weight: 700; color: #2b2b2b; font-family: 'Inter', 'Playfair Display', serif;">Settings</h2>
+        <div style="font-size: 1.08rem; color: #6c757d; margin-bottom: 2px;">Your café configuration center</div>
+        <div style="height:1px; background: #e5e5e5; margin-bottom: 8px; margin-top: 2px;"></div>
     </div>
     """,
     unsafe_allow_html=True,
@@ -161,3 +161,4 @@ with tabs[6]:
         st.session_state["settings"] = load_settings()
         st.success("Settings reset to defaults.")
     st.markdown(f"System version: 1.0.0")
+

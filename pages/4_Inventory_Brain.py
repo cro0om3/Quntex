@@ -94,7 +94,7 @@ with tabs[0]:
             <div style="position:relative;">
                 <div class="pill" style="background: rgba(27,118,255,0.16);">Inventory Brain — AI Loss Prevention</div>
                 <h2 style="margin:6px 0 2px;">Inventory Brain — AI Loss Prevention</h2>
-                <p style="color:#cbd7f0; margin:0;">Smart stock monitoring and predictive insights powered by IntaAgent™</p>
+                <p style="color:#cbd7f0; margin:0;">Smart stock monitoring and predictive insights powered by Qx™</p>
             </div>
         </div>
         """,
