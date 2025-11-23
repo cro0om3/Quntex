@@ -12,7 +12,7 @@ PIN_CODE = "2025"
 if st.session_state.get("auth"):
     st.switch_page("pages/2_Executive_Dashboard.py")
 
-st.markdown(
+st.markdown(    
     """
     <style>
     body, .stApp { background: radial-gradient(circle at 50% 20%, rgba(27,118,255,0.18), rgba(8,17,35,0.92)), #0b1324; }
